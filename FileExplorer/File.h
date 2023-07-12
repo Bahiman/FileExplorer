@@ -1,9 +1,10 @@
 #pragma once
-#include<filesystem>
+#include"FileSystemNode.h"
 
-namespace file
+class File : public FileSystemNode
 {
-	std::filesystem::path currentDirectory();	
-	std::vector<std::string> getDirectoriesFiles(const std::filesystem::path& path);
-	std::vector<std::string> getDirectoriesDirectories(const std::filesystem::path& path);
-}
+private:
+	std::filesystem::path m_file_name;
+public:
+	File(const std::filesystem::path& path);
+};

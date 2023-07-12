@@ -98,12 +98,18 @@
     <QtRcc Include="FileExplorer.qrc" />
     <QtUic Include="FileExplorer.ui" />
     <QtMoc Include="FileExplorer.h" />
+    <ClCompile Include="Directory.cpp" />
     <ClCompile Include="File.cpp" />
     <ClCompile Include="FileExplorer.cpp" />
+    <ClCompile Include="FileListModel.cpp" />
+    <ClCompile Include="FileSystemNode.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="File.h" />
+    <ClInclude Include="FileListModel.h" />
+    <ClInclude Include="FileSystemNode.h" />
+    <ClInclude Include="Directory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
